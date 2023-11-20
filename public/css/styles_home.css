@@ -26,17 +26,17 @@
   
   .container {
     display: flex;
+    margin-bottom: 10%;
   }
   
   .vertical-menu {
-    width: 200px;
-    padding: 10px;
+    padding-left: 3%;
     padding-top: 5%;
   }
   
   .vertical-menu a {
     font-family: "n27regular"; 
-  
+    font-size: 20px;
     padding: 8px;
     text-decoration: none;
     color: #333;
@@ -44,7 +44,7 @@
   }
   
   .vertical-menu a:hover {
-    color: grey;
+    text-decoration: underline;
   }
   
   .content {
@@ -54,11 +54,21 @@
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
-    flex-wrap: wrap; /* Permite que los productos se envuelvan a la siguiente línea cuando no hay suficiente espacio */
+    flex-wrap: wrap;
+  }
+  
+  a img:last-child {
+    display: none;  
+  }
+  a:hover img:last-child {
+    display: block;  
+  }
+  a:hover img:first-child {
+    display: none;  
   }
   
   .product {
-    width: 25%; /* Hace que cada producto ocupe el 25% del ancho del contenedor principal, mostrando 4 productos por fila */
+    width: 25%;
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 20px;
@@ -68,56 +78,69 @@
     max-width: 100%;
     height: auto;
   }
+
+  .product:hover img {
+    transform: scale(1.1); 
+}
+
+.product .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 0.5s; 
+}
   
   .product h2 {
     margin-top: 10px;
-    text-align: center; /* Alinea el texto al centro */
+    text-align: center; 
 
   }
-  footer {
-    color: black;
-    padding: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
+
+   footer {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    font-family: "n27regular";
-    font-size: 10px;
+    flex-direction: row;
+    justify-content: center;
   }
   
-  .footer-left {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos dentro de .footer-left */
-  }
-  
-  .footer-left img {
-    max-height: 30px; /* Ajusta la altura máxima según sea necesario */
-    margin-left: 50px; /* Ajusta el margen izquierdo del logo según sea necesario */
-    margin-top: 5px; /* Ajusta el margen superior según sea necesario */
-  }
-  
-  .footer-left span {
-    margin-left: 5px; /* Ajusta el margen izquierdo del texto según sea necesario */
-    display: flex; /* Hace que el contenido del span sea un flex container */
-    align-items: center; /* Alinea verticalmente el contenido del span */
-  }
-  
-  .footer-center {
-    flex-grow: 1;
-  }
-  
-  .footer-right {
-    text-align: right;
-  }
-  
-  footer a {
+  .footer-section {
     color: black;
     text-decoration: none;
-    margin-left: 10px;
+    font-size: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  footer a:hover {
-    text-decoration: underline;
+  .bruma {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  .username{
+    font-family: "n27regular"; 
+    margin-left: 20px;
+  }
+  .año {
+    font-family: "n27regular"; 
+    color: black;
+    text-decoration: none;
+  }
+
+  .año2 {
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .instagram-icon {
+    max-width: 25px; 
+    height: auto;
   }
   
