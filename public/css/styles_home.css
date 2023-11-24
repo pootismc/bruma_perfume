@@ -36,6 +36,7 @@
   
   .vertical-menu a {
     font-family: "n27regular"; 
+    text-align: center;
     font-size: 20px;
     padding: 8px;
     text-decoration: none;

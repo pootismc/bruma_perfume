@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'n27regular';
+    src: url('/fonts/n27-regular-webfont.eot');
+    src: url('/fonts/n27-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/n27-regular-webfont.woff2') format('woff2'),
+         url('/fonts/n27-regular-webfont.woff') format('woff'),
+         url('/fonts/n27-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+    header {
+    text-align: center;
+  }
+  
+  .logo-header {
+    max-width: 3%;
+    padding-top: 3%;
+  }
+  
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+  .vertical-menu {
+    padding-left: 3%;
+    padding-top: 5%;
+  }
+  
+  .vertical-menu a {
+    font-family: "n27regular"; 
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .vertical-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    font-family: "n27regular";
+    flex-grow: 1;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* Establece un ancho máximo si es necesario */
+    width: 100%; /* Añadido */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+  
+
+  
+.product {
+    flex-basis: 35%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15%;
+}
+
+.product h2 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.product .description {
+
+    color: #666; /* Color del texto de la descripción */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alternate-images {
+    display: flex;
+    justify-content: space-evenly; /* Ajusta según sea necesario */
+    margin-top: 10px; /* Puedes ajustar esto también según sea necesario */
+}
+
+.alternate-images img {
+    max-width: 15%; /* Ajusta el ancho de las imágenes alternativas según sea necesario */
+    height: auto;
+    transition: opacity 0.3s, border 0.3s; /* Agregamos una transición para suavizar el cambio de opacidad y borde */
+    border: 0; /* Asegúrate de que inicialmente no haya borde */
+}
+
+.alternate-images img.selected {
+    opacity: 1; /* Establece la opacidad completa para la imagen seleccionada */
+    border: 2px solid black; /* Establece el borde negro para la imagen seleccionada */
+}
+
+.alternate-images img:not(.selected) {
+    opacity: 0.6; /* Establece la opacidad para las imágenes no seleccionadas */
+}
+
+
+
+
+
+
+
+
+
+
+   footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-section {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bruma {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  .username{
+    font-family: "n27regular"; 
+    margin-left: 20px;
+  }
+  .año {
+    font-family: "n27regular"; 
+    color: black;
+    text-decoration: none;
+  }
+
+  .año2 {
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .instagram-icon {
+    max-width: 25px; 
+    height: auto;
+  }
+  
