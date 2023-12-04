@@ -13,9 +13,10 @@
 
     <div class="container">
         <nav class="vertical-menu">
-            <a href="http://localhost:3000" id="menu-bruma">BRUMA</a>
-            <a href="#" id="menu-scented-candle">SCENTED CANDLE</a>
-            <a href="http://localhost:3000/contact" id="menu-contact-us">CONTACT US</a>
+            <a href="http://localhost:3000">BRUMA</a>
+            <a href="http://localhost:3000/coming_soon"> SCENTED CANDLE</a>
+            <a href="http://localhost:3000/perfume"> PERFUME</a>
+            <a href="http://localhost:3000/contact" style="text-decoration: underline">CONTACT US</a>
         </nav>
 
         <div class="content">
@@ -67,8 +68,6 @@
             </div>
         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <img src="/images/instagram.svg" class="instagram-icon" alt="instagram">
-    
-    
         </div>
         <div class="footer-section">
           <img src="/images/bruma.svg" class="bruma" alt="bruma">
@@ -77,32 +76,11 @@
           <div class="año">
             <a class="año2" href="">PRIVACY POLICY
             </a>&nbsp;|
-            <a class="año2" href="">DISCLAIMER</a>          </div>
+            <a class="año2" href="">DISCLAIMER</a>          
+          </div>
         </div>
-      </footer>
+    </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Obtener todas las opciones del menú
-    var menuItems = document.querySelectorAll('.vertical-menu a');
-
-    // Agregar evento clic a cada opción del menú
-    menuItems.forEach(function (item) {
-        item.addEventListener('click', function (event) {
-            // Prevenir el comportamiento predeterminado del enlace
-            event.preventDefault();
-
-            // Quitar la clase 'active' de todas las opciones
-            menuItems.forEach(function (menuItem) {
-                menuItem.classList.remove('active');
-            });
-
-            // Agregar la clase 'active' solo a la opción seleccionada
-            item.classList.add('active');
-        });
-    });
-});
-</script>
 
 </body>
 </html>
