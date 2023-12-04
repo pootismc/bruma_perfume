@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'n27regular';
+  src: url('/fonts/n27-regular-webfont.eot');
+  src: url('/fonts/n27-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/n27-regular-webfont.woff2') format('woff2'),
+       url('/fonts/n27-regular-webfont.woff') format('woff'),
+       url('/fonts/n27-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+  header {
+  text-align: center;
+}
+
+.logo-header {
+  max-width: 3%;
+  padding-top: 3%;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.vertical-menu {
+  padding-top: 5%;
+}
+
+.vertical-menu a {
+  font-family: "n27regular"; 
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.vertical-menu a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  font-family: "n27regular";
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: -5%;
+}
+
+
+
+
+
+.product {
+  flex-basis: 30%; /* Ajusta el ancho de cada producto según tus preferencias */
+  padding: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenedor a columna */
+  align-items: center;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.product-info {
+  margin-top: 10px; /* Agrega un espacio entre la imagen y el título */
+}
+
+.product h2 {
+  font-family: "n27regular"; 
+  margin-top: 5%;
+}
+
+.product .description {
+color: #666;
+margin-bottom: 10%;
+}
+
+.buy-button {
+background-color: black;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+font-family: "n27regular";
+margin-top: 10px;
+}
+
+
+
+
+
+
+.product img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+}
+
+.alternate-images {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.alternate-images img {
+  max-width: 10%; 
+  height: auto;
+  transition: opacity 0.3s, border 0.3s; 
+  border: 0; 
+}
+
+.alternate-images img.selected {
+  opacity: 1; 
+  border: 2px solid black;
+}
+
+.alternate-images img:not(.selected) {
+  opacity: 0.6; 
+}
+
+
+
+
+
+
+
+
+
+
+ footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-section {
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bruma {
+  max-width: 30%;
+  height: auto;
+}
+
+.username{
+  font-family: "n27regular"; 
+  margin-left: 20px;
+}
+.año {
+  font-family: "n27regular"; 
+  color: black;
+  text-decoration: none;
+}
+
+.año2 {
+  color: black;
+  text-decoration: none;
+}
+
+
+.instagram-icon {
+  max-width: 25px; 
+  height: auto;
+}

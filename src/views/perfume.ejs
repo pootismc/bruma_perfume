@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bruma</title>
+    <link rel="stylesheet" href="/css/styles_perfume.css">
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <img src="/images/logo.svg" class="logo-header" alt="logo-bruma">
+    </header>
+
+    <div class="container">
+        <nav class="vertical-menu">
+            <a href="http://localhost:3000">BRUMA</a>
+            <a href="http://localhost:3000/coming_soon"> SCENTED CANDLES</a>
+            <a href="http://localhost:3000/perfume" style="text-decoration: underline"> PERFUMES</a>
+            <a href="http://localhost:3000/contact">CONTACT US</a>
+        </nav>
+
+        <div class="content">
+            <!-- Producto 1 -->
+            <div class="product">
+                <div class="product-images">
+                    <a>
+                        <img src="/images/001/01.jpg" alt="003" class="main-image" data-secondary-image="/images/003/secondary.jpg">
+                        <!-- <img src="/images/001/0001.jpg" alt="003" class="secondary-image">                    </a> -->
+                </div>
+                <div class="product-info">
+                    <h2>001</h2>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <div class="product-images">
+                    <a>
+                        <img src="/images/002/02.jpg" alt="003" class="main-image" data-secondary-image="/images/003/secondary.jpg">
+                        <!-- <img src="/images/002/0002.jpg" alt="003" class="secondary-image">                    </a> -->
+                </div>
+                <div class="product-info">
+                    <h2>002</h2>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product">
+                <div class="product-images">
+                    <a>
+                        <img src="/images/003/03.jpg" alt="003" class="main-image" data-secondary-image="/images/003/secondary.jpg">
+                        <!-- <img src="/images/003/0003.jpg" alt="003" class="secondary-image">                    </a> -->
+                </div>
+                <div class="product-info">
+                    <h2>003</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr width="80%;" color="black"> 
+
+    <footer>
+        <div class="footer-section">
+            <div class="año">
+                &copy; 2023 by BRUMA
+            </div>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="/images/instagram.svg" class="instagram-icon" alt="instagram">
+        </div>
+        <div class="footer-section">
+          <img src="/images/bruma.svg" class="bruma" alt="bruma">
+        </div>
+        <div class="footer-section">
+          <div class="año">
+            <a class="año2" href="">PRIVACY POLICY
+            </a>&nbsp;|
+            <a class="año2" href="">DISCLAIMER</a>          
+          </div>
+        </div>
+    </footer>
+    <script>
+        // Utiliza jQuery para manejar los eventos de ratón
+        $(document).ready(function () {
+            $('.main-image').hover(function () {
+                // Muestra la imagen secundaria al pasar el ratón por encima
+                $(this).next('.secondary-image').css('opacity', '1');
+            }, function () {
+                // Oculta la imagen secundaria al quitar el ratón
+                $(this).next('.secondary-image').css('opacity', '0');
+            });
+        });
+    </script>
+</body>
+</html>
