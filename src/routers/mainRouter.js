@@ -14,4 +14,8 @@ router.get('/product', function(req, res){
     res.render('product')
 });
 
+router.get('/contact', function(req, res){
+    res.render('contact')
+});
+
 module.exports = router

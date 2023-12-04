@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bruma</title>
+    <link rel="stylesheet" href="/css/styles_contact.css">
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <img src="/images/logo.svg" class="logo-header" alt="logo-bruma">
+    </header>
+
+    <div class="container">
+        <nav class="vertical-menu">
+            <a href="http://localhost:3000" id="menu-bruma">BRUMA</a>
+            <a href="#" id="menu-scented-candle">SCENTED CANDLE</a>
+            <a href="http://localhost:3000/contact" id="menu-contact-us">CONTACT US</a>
+        </nav>
+
+        <div class="content">
+
+            <div class="contact_us">
+                <h2>Contact Us</h2>
+                
+                <div class="contact-info">
+                    <p class="info-label">E-MAIL</p>
+                    <p class="info-value">example@example.com</p>
+                </div>
+            
+                <div class="contact-info">
+                    <p class="info-label">INSTAGRAM</p>
+                    <div class="instagram-container">
+                        <img src="/images/instagram.svg" class="instagram" alt="instagram">
+                        <p>bruma_perfume</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr style="width: 80%; border: 1px solid black; margin: 20px auto; margin-left: -50px;">
+            
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+    <hr width="80%;" color="black"> 
+
+    <footer>
+        <div class="footer-section">
+            <div class="año">
+                &copy; 2023 by BRUMA
+            </div>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="/images/instagram.svg" class="instagram-icon" alt="instagram">
+    
+    
+        </div>
+        <div class="footer-section">
+          <img src="/images/bruma.svg" class="bruma" alt="bruma">
+        </div>
+        <div class="footer-section">
+          <div class="año">
+            <a class="año2" href="">PRIVACY POLICY
+            </a>&nbsp;|
+            <a class="año2" href="">DISCLAIMER</a>          </div>
+        </div>
+      </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener todas las opciones del menú
+    var menuItems = document.querySelectorAll('.vertical-menu a');
+
+    // Agregar evento clic a cada opción del menú
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            // Prevenir el comportamiento predeterminado del enlace
+            event.preventDefault();
+
+            // Quitar la clase 'active' de todas las opciones
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.remove('active');
+            });
+
+            // Agregar la clase 'active' solo a la opción seleccionada
+            item.classList.add('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
