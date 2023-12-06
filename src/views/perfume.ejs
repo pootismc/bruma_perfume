@@ -20,7 +20,6 @@
         </nav>
 
         <div class="content">
-            <!-- Producto 1 -->
             <div class="product">
                 <div class="product-images">
                     <a>
@@ -28,11 +27,12 @@
                         <!-- <img src="/images/001/0001.jpg" alt="003" class="secondary-image">                    </a> -->
                 </div>
                 <div class="product-info">
-                    <h2>001</h2>
+                    <a href="http://localhost:3000/001" style="color: black; text-decoration: none;">
+                        <h2>001</h2>
+                    </a>
                 </div>
             </div>
 
-            <!-- Producto 2 -->
             <div class="product">
                 <div class="product-images">
                     <a>
@@ -40,11 +40,11 @@
                         <!-- <img src="/images/002/0002.jpg" alt="003" class="secondary-image">                    </a> -->
                 </div>
                 <div class="product-info">
+                    <a href="http://localhost:3000/002" style="color: black; text-decoration: none;">
                     <h2>002</h2>
                 </div>
             </div>
 
-            <!-- Producto 3 -->
             <div class="product">
                 <div class="product-images">
                     <a>
@@ -52,6 +52,7 @@
                         <!-- <img src="/images/003/0003.jpg" alt="003" class="secondary-image">                    </a> -->
                 </div>
                 <div class="product-info">
+                    <a href="http://localhost:3000/002" style="color: black; text-decoration: none;">
                     <h2>003</h2>
                 </div>
             </div>
@@ -80,13 +81,10 @@
         </div>
     </footer>
     <script>
-        // Utiliza jQuery para manejar los eventos de ratón
         $(document).ready(function () {
             $('.main-image').hover(function () {
-                // Muestra la imagen secundaria al pasar el ratón por encima
                 $(this).next('.secondary-image').css('opacity', '1');
             }, function () {
-                // Oculta la imagen secundaria al quitar el ratón
                 $(this).next('.secondary-image').css('opacity', '0');
             });
         });

@@ -2,7 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', function(req, res){
-    res.render('home')
+    res.render('coming')
+});
+
+router.get('/scented-candles', function(req, res){
+    res.render('coming')
+});
+
+router.get('/perfumeS', function(req, res){
+    res.render('perfume')
 });
 
 router.get('/001', function(req, res){
