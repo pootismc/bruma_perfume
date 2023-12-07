@@ -9,7 +9,7 @@ router.get('/scented-candles', function(req, res){
     res.render('coming')
 });
 
-router.get('/perfumeS', function(req, res){
+router.get('/perfumes', function(req, res){
     res.render('perfume')
 });
 
