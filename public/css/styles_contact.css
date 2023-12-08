@@ -179,6 +179,13 @@ display: flex;
 align-items: center;
 }
 
+hr {
+  width: 80%;
+  border: 1px solid black; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 
 
 .vertical-menu a.active {
@@ -186,12 +193,78 @@ text-decoration: underline; /* o cualquier otro estilo que desees */
 font-weight: bold; /* para hacerlo más destacado, si lo prefieres */
 }
 
+@media screen and (max-width: 768px) {
+
+  .logo-header {
+    max-width: 12%;
+    padding-top: 8%;
+  }
+
+  .content {
+    margin-left: 0;
+    display: block;
+  }
+
+  .vertical-menu a {
+    font-size: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vertical-menu {
+    width: 100%;
+    order: -1;
+    margin-top: 10px;
+  }
+
+  .año {
+    font-size: 8px;
+  }
+
+  .instagram-icon {
+    max-width: 15px;
+    height: auto;
+  }
+
+  .bruma {
+    max-width: 60%;
+    height: auto;
+  }
+
+  form {
+    width: 90%; 
+    margin-left: 5%;
+  }
+
+  .contact_us {
+    text-align: center; 
+    margin-left: 0;
+  }
+
+  .contact-info {
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 10%;
+  }
 
 
 
+  .info-value {
+    margin-left: 0; /* Elimina el margen izquierdo para que el texto esté más cerca de la etiqueta */
+  }
 
+  .instagram-container {
+    margin-top: 10px;
+  }
 
+  hr {
+    width: 80%;
+    border: 1px solid black; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-
-
-
+}
