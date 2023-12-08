@@ -64,18 +64,14 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Obtiene la imagen principal y las imágenes alternativas
             const mainImage = document.querySelector('.product img');
             const alternateImages = document.querySelectorAll('.alternate-images img');
     
-            // Añade un evento de clic a cada imagen alternativa
             alternateImages.forEach(function (alternateImage) {
                 alternateImage.addEventListener('click', function () {
-                    // Cambia la imagen principal al hacer clic en la imagen alternativa
                     mainImage.src = alternateImage.src;
                     mainImage.alt = alternateImage.alt;
     
-                    // Ajusta la opacidad y el borde de las imágenes alternativas
                     alternateImages.forEach(function (img) {
                         if (img === alternateImage) {
                             img.classList.add('selected');
