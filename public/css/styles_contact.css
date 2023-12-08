@@ -128,17 +128,17 @@ textarea {
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
-  resize: none; /* Evita que el textarea sea redimensionable */
+  resize: none;
 }
 
 button {
-background-color: transparent; /* Hace el fondo transparente */
-color: black; /* Cambia el color del texto del botón */
+background-color: transparent; 
+color: black; 
 cursor: pointer;
 border: none;
 font-family: "n27regular"; 
-align-self: flex-end; /* Mueve el botón hacia la derecha */
-  margin-top: 10px; /* Agrega un margen superior según sea necesario */
+align-self: flex-end; 
+  margin-top: 10px; 
 }
 
 
@@ -160,7 +160,7 @@ margin-top: 50px;
 }
 
 .info-label {
-flex-basis: 100px; /* Ancho fijo para las etiquetas */
+flex-basis: 100px; 
 margin-right: 50px;
 }
 
@@ -189,8 +189,8 @@ hr {
 
 
 .vertical-menu a.active {
-text-decoration: underline; /* o cualquier otro estilo que desees */
-font-weight: bold; /* para hacerlo más destacado, si lo prefieres */
+text-decoration: underline; 
+font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -253,7 +253,7 @@ font-weight: bold; /* para hacerlo más destacado, si lo prefieres */
 
 
   .info-value {
-    margin-left: 0; /* Elimina el margen izquierdo para que el texto esté más cerca de la etiqueta */
+    margin-left: 0; 
   }
 
   .instagram-container {
