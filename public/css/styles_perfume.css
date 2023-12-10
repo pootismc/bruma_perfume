@@ -33,6 +33,7 @@ body, html {
 
 .vertical-menu {
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 .vertical-menu a {
@@ -55,7 +56,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -190,6 +191,7 @@ footer {
 
   .content {
     margin-left: 0;
+    width: 100%;
   }
 
   .vertical-menu a { 
@@ -204,6 +206,7 @@ footer {
       width: 100%;
       order: -1;
       margin-top: 10px;
+      padding-left: 0;
   }
 
   .product {
