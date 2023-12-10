@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', function(req, res){
-    res.render('coming')
+    res.render('home')
 });
 
 router.get('/collabs', function(req, res){
